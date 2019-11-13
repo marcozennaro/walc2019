@@ -5,9 +5,9 @@ https://www.amazon.com/UGREEN-Adapter-Samsung-Controller-Android/dp/B00N9S9Z0G
 
 _Comandos_
 ___
-clear
+clear<br />
 sudo raspi-config
-<br />
+<br /><br /><br />
 _INSTALACIÓN MOSQUITTO RASPBERRY PI_
 ___
 sudo apt update

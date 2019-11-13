@@ -1,6 +1,5 @@
 
-_OTG microusb_
-___
+__OTG microusb__<br />
 https://www.amazon.com/UGREEN-Adapter-Samsung-Controller-Android/dp/B00N9S9Z0G
 
 __Comandos__<br />

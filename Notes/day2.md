@@ -7,16 +7,18 @@ _Comandos_
 ___
 clear
 sudo raspi-config
-
+<br />
 _INSTALACIÓN MOSQUITTO RASPBERRY PI_
 ___
 sudo apt update
 sudo apt install -y mosquitto mosquitto-clients
 
 
+
 _INICIAR SERVICIO MOSQUITTO_
 ___
 sudo systemctl enable mosquitto.service
+
 
 _VERBOSE MOSQUITTO_
 ___

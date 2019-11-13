@@ -19,9 +19,6 @@ import sys
 import time
 import utime
 
-# pycom.heartbeat(False)
-# pycom.rgbled(0x000000)
-
 # ----------------- Pysense sensor initialization
 py = Pysense()
 # The MPL3115A2 returns height in meters.
@@ -33,13 +30,29 @@ SensPress = MPL3115A2(py,mode=ALTITUDE)
 
 # ----------------- activating LoRa
 print("activating LoRa")
-lora = LoRa(mode=LoRa.LORAWAN)
-#
-# key for pysense-001 , ABP activation
-dev_addr = struct.unpack(">l", binascii.unhexlify('26011984'))[0]
-nwk_swkey = binascii.unhexlify('5ECF005491EC779608B81BDD50D90C1D')
-app_swkey = binascii.unhexlify('462175A1109541A7AF1342374F3628D7')
+lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.US915)
+
+dev_addr = struct.unpack(">l", binascii.unhexlify('2602108C'))[0]
+nwk_swkey = binascii.unhexlify('4F1651F280226B0B3898E5F46B4B96B7')
+app_swkey = binascii.unhexlify('45C82343FA18FEDDC4D9BDF5E1C698A2')
+
+for channel in range(0, 72):
+    lora.remove_channel(channel)
+
+
+for i in range(0,7):
+    lora.add_channel(i, frequency=(903900000  + 200000 * i), dr_min=0, dr_max=3)
+
+
+# join a network using ABP (Activation By Personalization)
 lora.join(activation=LoRa.ABP, auth=(dev_addr, nwk_swkey, app_swkey))
+
+# remove all the non-default channels
+for i in range(4, 16):
+    lora.remove_channel(i)
+
+s = socket.socket(socket.AF_LORA, socket.SOCK_RAW)
+s.setsockopt(socket.SOL_LORA, socket.SO_DR, 3)
 time.sleep(5)
 
 

@@ -1,14 +1,14 @@
-__TTN Broker__
-<br/>Server:us-west.thethings.network
-<br/>port: 1883
+__Configuración Nodo TTN Broker__
+<br/>**Server:** us-west.thethings.network
+<br/>**port:** 1883
 
 __Security__
-<br/>username: nombre_app
-<br/>password: access key
+<br/>**username:** nombre_app
+<br/>**password:** access key
 
-__MV Ubuntu__
-<br/>usuario: iot
-<br/>clave: iot
+__Credenciales MV Ubuntu__
+<br/>**usuario:** iot
+<br/>**clave:** iot
 
 __Prerequisito para instalación de paquetes NodeRed MV Ubuntu__
 ```

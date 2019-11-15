@@ -13,16 +13,17 @@ __MV Ubuntu__
 __Instalación paquetes NodeRed MV Ubuntu__
 <br/>sudo apt install git
 
-__INTRODUCCION JSON__
+__Introducción JSON__
 <br/>http://json.org/
 
-__FUNCION (PARSE JSON)__
+__Función (parse JSON)__
+```
 <br/>var temp = msg.payload["temperature"]
 <br/>msg.payload = temp;
-<br/>return msg;
+<br/>return msg;```
 
 
-__GATEWAYS LoRa__
+__Gateways LoRa__
 <br/>https://www.thethingsnetwork.org/docs/gateways/thethingsindoor/
 <br/>https://pycom.io/product/pygate/
 <br/>https://store.rakwireless.com/products/rak2245-pi-hat?variant=26653392535652

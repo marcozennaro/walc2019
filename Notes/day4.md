@@ -17,10 +17,10 @@ __Introducción JSON__
 <br/>http://json.org/
 
 __Función (parse JSON)__
-```
+<code>
 <br/>var temp = msg.payload["temperature"]
 <br/>msg.payload = temp;
-<br/>return msg;```
+<br/>return msg;</code>
 
 
 __Gateways LoRa__

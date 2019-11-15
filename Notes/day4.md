@@ -30,12 +30,12 @@ __Gateways LoRa__
 <br/>https://pycom.io/product/pygate/
 <br/>https://store.rakwireless.com/products/rak2245-pi-hat?variant=26653392535652
 
-<br/>https://keptenkurk.wordpress.com/2018/09/21/plotting-ttn-gateways-on-a-map/
-
-__TTN MAPPER__
+__TTN Mapper__
 <br/>https://play.google.com/store/apps/details?id=org.ttnmapper.phonesurveyor&hl=es_GT
 <br/>https://ttnmapper.org
 
+__NodeRed TTN Mapper__
+<br/>https://keptenkurk.wordpress.com/2018/09/21/plotting-ttn-gateways-on-a-map/
 
 __InfluxDB__
 ```

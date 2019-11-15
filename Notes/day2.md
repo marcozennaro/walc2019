@@ -1,33 +1,49 @@
+__OTG microusb__
+<br/>https://www.amazon.com/UGREEN-Adapter-Samsung-Controller-Android/dp/B00N9S9Z0G
 
-__OTG microusb__<br />
-https://www.amazon.com/UGREEN-Adapter-Samsung-Controller-Android/dp/B00N9S9Z0G
-
-__Comandos__<br />
-clear<br />
+__Configuración Raspberry Pi__
+```
 sudo raspi-config
-<br /><br />
-__INSTALACIÓN MOSQUITTO RASPBERRY PI__<br />
-sudo apt update<br />
+```
+
+__Instalación Mosquitto Raspberry Pi__
+```
+sudo apt update
 sudo apt install -y mosquitto mosquitto-clients
-<br /><br />
-__INICIAR SERVICIO MOSQUITTO__<br />
+```
+
+__Iniciar servicio Mosquitto__
+```
 sudo systemctl enable mosquitto.service
-<br /><br />
-__VERBOSE MOSQUITTO__<br />
+```
+
+__Verbose Mosquitto__
+```
 mosquitto -v
-<br /><br />
-__SUSCRIBER__<br />
+```
+
+__Suscriber__
+```
 mosquitto_sub -d -t iot_8
-<br /><br />
-__PUBLISHER__<br />
+```
+
+__Publisher__
+```
 mosquitto_pub -d -t iot_8 -m "10"
-<br /><br />
-__Configurar WiFi en la Raspberry Pi__<br />
-sudo raspi-config<br />
-option 2 NETWORK OPTIONS
-<br /><br />
-__REINICIAR LA RPi__<br />
+```
+
+__Configurar WiFi en la Raspberry Pi__
+```
+sudo raspi-config
+option 2 Network Options
+```
+
+__Reiniciar La RPi__
+```
 sudo init 6
-<br /><br />
-__DESCUBRIR LA IP__<br />
+```
+
+__Mostrar la IP__
+```
 ip a
+```

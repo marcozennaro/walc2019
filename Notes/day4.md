@@ -36,6 +36,6 @@ __TTN MAPPER__
 
 
 __InfluxDB__
-´´´
+```
 sudo service influxdb start
-sudo service grafana-server start´´´
+sudo service grafana-server start```

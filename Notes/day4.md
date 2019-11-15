@@ -10,7 +10,7 @@ __MV Ubuntu__
 <br/>usuario: iot
 <br/>clave: iot
 
-__Instalación paquetes NodeRed MV Ubuntu__
+__Prerequisito para instalación de paquetes NodeRed MV Ubuntu__
 ```
 sudo apt install git
 ```

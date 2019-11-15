@@ -11,16 +11,18 @@ __MV Ubuntu__
 <br/>clave: iot
 
 __Instalación paquetes NodeRed MV Ubuntu__
-<br/>sudo apt install git
+```
+sudo apt install git
+```
 
 __Introducción JSON__
 <br/>http://json.org/
 
 __Función (parse JSON)__
 ```
-<br/>var temp = msg.payload["temperature"]
-<br/>msg.payload = temp;
-<br/>return msg;
+var temp = msg.payload["temperature"]
+msg.payload = temp;
+return msg;
 ```
 
 __Gateways LoRa__
@@ -39,3 +41,4 @@ __InfluxDB__
 ```
 sudo service influxdb start
 sudo service grafana-server start
+```

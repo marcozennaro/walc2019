@@ -17,11 +17,11 @@ __Introducción JSON__
 <br/>http://json.org/
 
 __Función (parse JSON)__
-<code>
+```
 <br/>var temp = msg.payload["temperature"]
 <br/>msg.payload = temp;
-<br/>return msg;</code>
-
+<br/>return msg;
+```
 
 __Gateways LoRa__
 <br/>https://www.thethingsnetwork.org/docs/gateways/thethingsindoor/
@@ -38,4 +38,4 @@ __TTN MAPPER__
 __InfluxDB__
 ```
 sudo service influxdb start
-sudo service grafana-server start´´´
+sudo service grafana-server start
